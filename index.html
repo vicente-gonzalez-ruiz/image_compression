@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html> 
+<head> <title>Image compression</title> 
+<meta charset="UTF-8" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<link rel="stylesheet" type="text/css" href="index.css" /> 
+<script type="text/javascript" 
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
+></script> 
+<style type="text/css"> 
+.MathJax_MathML {text-indent: 0;} 
+</style> 
+</head><body 
+>
+   <div class="maketitle">
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+
+<h2 class="titleHead">Image compression</h2>
+ <div class="author" ><span 
+class="ecrm-1200">Vicente Gonz</span><span 
+class="ecrm-1200">á</span><span 
+class="ecrm-1200">lez Ruiz</span></div><br />
+<div class="date" ><span 
+class="ecrm-1200">January 3, 2019</span></div>
+   </div>
+   <div class="tableofcontents">
+   <span class="sectionToc" >1 <a 
+href="#x1-10001" id="QQ2-1-1">Image redundancy</a></span>
+<br />   <span class="sectionToc" >2 <a 
+href="#x1-20002" id="QQ2-1-2">Data ﬂow [<span 
+class="ecbx-1000">?</span>]</a></span>
+<br />   <span class="sectionToc" >3 <a 
+href="#x1-30003" id="QQ2-1-3">Lossless compressors</a></span>
+<br />   <span class="sectionToc" >4 <a 
+href="#x1-40004" id="QQ2-1-4">Lossy compressors</a></span>
+<br />   <span class="sectionToc" >5 <a 
+href="#x1-50005" id="QQ2-1-5">Lossy-to-lossless compressors</a></span>
+<br />   <span class="likesectionToc" ><a 
+href="#x1-60005" id="QQ2-1-6">References</a></span>
+   </div>
+   <h3 class="sectionHead"><span class="titlemark">1   </span> <a 
+ id="x1-10001"></a>Image redundancy</h3>
+<!--l. 13--><p class="noindent" >
+     </p><ol  class="enumerate1" >
+     <li 
+  class="enumerate" id="x1-1002x1">Pixel-wise analysis shows <a 
+href="https://vicente-gonzalez-ruiz.github.io/image_redundancies/" >redundancy</a>.</li></ol>
+<!--l. 17--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">2   </span> <a 
+ id="x1-20002"></a>Data ﬂow <span class="cite">[<span 
+class="ecbx-1000">?</span>]</span></h3>
+                                                                  
+
+                                                                  
+   <div class="verbatim" id="verbatim-1">
+PCM   +---------+        +---------+ PCM
+ <br />-----&#x003E;| Encoder |-------&#x003E;| Decoder |-----&#x003E;
+ <br />image +---------+ stream +---------+ image’
+ <br />
+ <br />              image != image’
+ <br />                (usually)
+</div>
+<!--l. 26--><p class="nopar" >
+</p><!--l. 28--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">3   </span> <a 
+ id="x1-30003"></a>Lossless compressors</h3>
+<!--l. 29--><p class="noindent" >
+     </p><ol  class="enumerate1" >
+     <li 
+  class="enumerate" id="x1-3002x1">Most of them based on <a 
+href="https://vicente-gonzalez-ruiz.github.io/differential_coding/" >diﬀerential coding</a> and <a 
+href="https://vicente-gonzalez-ruiz.github.io/symbol_compression/" >entropy coding</a>.</li></ol>
+<!--l. 33--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">4   </span> <a 
+ id="x1-40004"></a>Lossy compressors</h3>
+<!--l. 34--><p class="noindent" >
+     </p><ol  class="enumerate1" >
+     <li 
+  class="enumerate" id="x1-4002x1">Fundamentaly, based on <a 
+href="https://vicente-gonzalez-ruiz.github.io/image_transformations_for_coding/" >image transformations</a>, <a 
+href="https://vicente-gonzalez-ruiz.github.io/quantization/" >scalar quantization</a> and
+     <a 
+href="https://vicente-gonzalez-ruiz.github.io/symbol_compression/" >entropy coding</a>.</li></ol>
+<!--l. 38--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">5   </span> <a 
+ id="x1-50005"></a>Lossy-to-lossless compressors</h3>
+<!--l. 39--><p class="noindent" >
+     </p><ol  class="enumerate1" >
+     <li 
+  class="enumerate" id="x1-5002x1">Similar to lossy but using embbeded quantization.</li></ol>
+                                                                  
+
+                                                                  
+<!--l. 1--><p class="noindent" >
+</p>
+   <h3 class="likesectionHead"><a 
+ id="x1-60005"></a>References</h3>
+<!--l. 1--><p class="noindent" >
+</p>
+    
+</body> 
+</html>
+                                                                  
+
+

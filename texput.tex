@@ -1,0 +1,43 @@
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "<none>"
+%%% End:
+
+\title{Image compression}
+
+\author{Vicente González Ruiz}
+
+\maketitle
+
+\section{Image redundancy}
+\begin{enumerate}
+\item Pixel-wise analysis shows \href{https://vicente-gonzalez-ruiz.github.io/image_redundancies/}{redundancy}.
+\end{enumerate}
+
+\section{Data flow~\cite{sayood2017introduction}}
+
+\begin{verbatim}
+PCM   +---------+        +---------+ PCM
+----->| Encoder |------->| Decoder |----->
+image +---------+ stream +---------+ image'
+
+              image != image'
+                (usually)
+\end{verbatim}
+
+\section{Lossless compressors}
+\begin{enumerate}
+\item Most of them based on \href{https://vicente-gonzalez-ruiz.github.io/differential_coding/}{differential coding} and \href{https://vicente-gonzalez-ruiz.github.io/symbol_compression/}{entropy coding}.
+\end{enumerate}
+
+\section{Lossy compressors}
+\begin{enumerate}
+\item Fundamentaly, based on \href{https://vicente-gonzalez-ruiz.github.io/image_transformations_for_coding/}{image transformations}, \href{https://vicente-gonzalez-ruiz.github.io/quantization/}{scalar quantization} and \href{https://vicente-gonzalez-ruiz.github.io/symbol_compression/}{entropy coding}.
+\end{enumerate}
+
+\section{Lossy-to-lossless compressors}
+\begin{enumerate}
+\item Similar to lossy but using \href{}{embbeded quantization}.
+\end{enumerate}
+
+\bibliography{image-compression}
