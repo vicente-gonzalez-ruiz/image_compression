@@ -1,17 +1,11 @@
-%%% Local Variables:
-%%% mode: latex
-%%% TeX-master: "<none>"
-%%% End:
-
 \title{Image compression~\cite{1991.rabbani}}
-
 \author{Vicente González Ruiz}
-
 \maketitle
+\tableofcontents
 
 \section{Image redundancy}
 \begin{enumerate}
-\item Pixel-wise analysis shows \href{https://vicente-gonzalez-ruiz.github.io/image_redundancies/}{redundancy}.
+\item Pixel-wise analysis shows \mylink{redundancy}{redundancy}.
 \end{enumerate}
 
 \section{Data flow~\cite{sayood2017introduction}}
@@ -27,17 +21,32 @@ image +---------+ stream +---------+ image'
 
 \section{Lossless compressors}
 \begin{enumerate}
-\item Most of them based on \href{https://vicente-gonzalez-ruiz.github.io/differential_coding/}{differential coding} and \href{https://vicente-gonzalez-ruiz.github.io/symbol_compression/}{entropy coding}.
+\item Most of them based on \mylink{differential_coding/}{differential
+    coding} and \mylink{symbol_compression}{entropy coding}.
 \end{enumerate}
 
 \section{Lossy compressors}
 \begin{enumerate}
-\item Fundamentaly, based on \href{https://vicente-gonzalez-ruiz.github.io/image_transformations_for_coding/}{image transformations}, \href{https://vicente-gonzalez-ruiz.github.io/quantization/}{scalar quantization} and \href{https://vicente-gonzalez-ruiz.github.io/symbol_compression/}{entropy coding}.
+\item Fundamentaly, based on \mylink{image_transformations_for_coding}{image
+    transformations}, \mylink{quantization}{scalar quantization}
+  and \mylink{symbol_compression}{entropy coding}.
 \end{enumerate}
 
 \section{Lossy-to-lossless compressors}
 \begin{enumerate}
-\item Similar to lossy but using \href{}{embbeded quantization}.
+\item Similar to lossy but using
+  \mylink{quantization}{embbeded quantization}.
 \end{enumerate}
 
-\bibliography{data-compression,image-compression}
+\section{Multiresolution}
+See \mylink{pyramids-and-wavelets}{pyramids and wavelets}.
+
+\section{Codecs}
+\begin{enumerate}
+\item \mylink{LOCO}{LOCO}.
+\item \mylink{JPEG}{JPEG}.
+\item \mylink{JPEG2000}{JPEG2000}.
+\item \mylink{PNG}{PNG}.
+\end{enumerate}
+
+\bibliography{data-compression, text-compression, image-compression, LOCO, PEG,image-standards, JPEG2000}
